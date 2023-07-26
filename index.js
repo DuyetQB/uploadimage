@@ -8,7 +8,6 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors())
 // Create the "uploads" directory if it doesn't exist
 const uploadsDir = './uploads';
 if (!fs.existsSync(uploadsDir)) {
